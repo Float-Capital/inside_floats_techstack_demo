@@ -1,0 +1,24 @@
+type Transaction @entity {
+  id: ID!
+  transactionType: String!
+  hodler: Hodler!
+  amount: BigInt!
+  timestamp: BigInt!
+  token: Token!
+}
+
+type Token @entity {
+  id: ID!
+  tokenAddress: Bytes!
+  amount: BigInt!
+  hodler: Hodler!
+  timestamp: BigInt!
+  transactions: [Transaction!]! @derivedFrom(field: "token")
+}
+
+type Hodler @entity {
+  id: ID!
+  ethAddress: String!
+  tokens: [Token!]! @derivedFrom(field: "hodler")
+  transactions: [Transaction!]! @derivedFrom(field: "hodler")
+}

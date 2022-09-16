@@ -1,0 +1,28 @@
+specVersion: 0.0.4
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: HodlWallet
+    network: fuji
+    source:
+      address: "0x5722ee7282a04297ab0702cdd8a43879954a8d66"
+      abi: HodlWallet
+      startBlock: 13562850
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Token
+        - Transaction
+        - Hodler
+      abis:
+        - name: HodlWallet
+          file: ./abis/HodlWallet.json
+      eventHandlers:
+        - event: Deposit(uint256,uint256,address,address)
+          handler: handleDeposit
+        - event: Withdraw(uint256,uint256,address,address)
+          handler: handleWithdraw
+      file: ./src/hodl-wallet.ts

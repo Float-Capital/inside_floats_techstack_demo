@@ -1,0 +1,41 @@
+{
+  "name": "rescript-nextjs-template",
+  "version": "1.0.0",
+  "author": "Patrick Ecker <ryyppy@users.noreply.github.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "ethers": "^5.7.1",
+    "next": "10.2.3",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "rescript-apollo-client": "^3.1.0"
+  },
+  "repository": "https://github.com/ryyppy/rescript-nextjs-template",
+  "scripts": {
+    "dev": "next",
+    "debug": "NODE_OPTIONS='--inspect' next",
+    "build": "rescript && next build",
+    "now-build": "rescript && next build",
+    "export": "next export",
+    "start": "next start -p $PORT",
+    "res:build": "rescript",
+    "res:clean": "rescript clean",
+    "res:start": "rescript build -w",
+    "update-schema": "get-graphql-schema https://api.thegraph.com/subgraphs/name/jonoprest/hodl-wallet -j > graphql_schema.json"
+  },
+  "devDependencies": {
+    "@reasonml-community/graphql-ppx": "^1.2.3",
+    "@ryyppy/rescript-promise": "^2.1.0",
+    "@rescript/react": "0.10.3",
+    "autoprefixer": "10.1.0",
+    "cssnano": "5.0.5",
+    "gentype": "4.1",
+    "get-graphql-schema": "^2.1.2",
+    "next-transpile-modules": "7.1.2",
+    "postcss": "8.2.15",
+    "postcss-cli": "8.3.1",
+    "rescript": "9.1",
+    "tailwindcss": "2.0.4"
+  }
+}

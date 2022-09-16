@@ -1,0 +1,2 @@
+HodlWalletTest:testDeposit() (gas: 105207)
+HodlWalletTest:testWithdraw(uint32) (runs: 256, μ: 116060, ~: 116060)
