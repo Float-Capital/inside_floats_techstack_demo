@@ -4,5 +4,8 @@ out = 'out'
 libs = ['lib']
 remappings = ['@openzeppelin/=lib/openzeppelin-contracts']
 
+[fuzz]
+runs = 1000
+max_test_rejects = 700000
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
