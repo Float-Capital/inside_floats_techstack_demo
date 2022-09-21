@@ -2,8 +2,7 @@
 
 ### Share Friday Demo Code
 
-View the share friday workshop video here:
-(https://www.youtube.com/watch?v=VaxbB8HJvr4&t=2567s&ab_channel=Float)[https://www.youtube.com/watch?v=VaxbB8HJvr4&t=2567s&ab_channel=Float]
+View the share friday workshop video (here)[https://www.youtube.com/watch?v=VaxbB8HJvr4&t=2567s&ab_channel=Float]
 
 ### Documentation and Resources
 
