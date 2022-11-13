@@ -6,7 +6,7 @@
   "dependencies": {
     "@apollo/client": "^3.6.9",
     "ethers": "^5.7.1",
-    "next": "10.2.3",
+    "next": "13.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "rescript-apollo-client": "^3.1.0"
